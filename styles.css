@@ -7,8 +7,8 @@ body {
 
 button {
     border: solid black 2px;
-    border-radius: 10px;
     background-color: #ccc;
+    border-radius: 25px;
 }
 
 button:hover {
@@ -47,16 +47,16 @@ button:active {
 }
 
 .display{
+    font-size: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: grey;
     color: black;
-    font-size: 50px;
     border: solid black 2px;
     border-radius: 10px;
     width: 80%;
-    height: 15%;
+    height: 20%;
 }
 
 .buttonContainer {
@@ -75,7 +75,6 @@ button:active {
     display: flex;
     justify-content: center;
     font-size: 52px;
-    border-radius: 10px;
     flex: 1 0 calc(50% - 10px);
     margin: 5px;
 }
