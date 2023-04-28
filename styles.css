@@ -86,9 +86,13 @@ button:active {
 
 .numberButtons {
     font-size: 52px;
-    flex: 1 0 calc(33.33% - 10px);
+    flex: 1 0 calc(25% - 10px);
     height: 100px; 
     margin: 5px; 
+}
+
+.operatorButtons {
+    background-color: rgba(64, 200, 245, 0.726);
 }
 
 .footer {
