@@ -49,14 +49,24 @@ button:active {
 .display{
     font-size: 52px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     background-color: grey;
     color: black;
     border: solid black 2px;
     border-radius: 10px;
     width: 80%;
     height: 20%;
+}
+
+#topDisplay {
+    font-size: 38px;
+    flex: 1 0 calc(50% - 10px);
+}
+
+#bottomDisplay {
+    flex: 1 0 calc(50% - 10px);
 }
 
 .buttonContainer {
@@ -91,7 +101,15 @@ button:active {
     margin: 5px; 
 }
 
+#del, #clear {
+    background-color: rgba(255, 0, 0, 0.747);
+}
+
 .operatorButtons {
+    background-color: rgba(64, 200, 245, 0.726);
+}
+
+.equalsButton {
     background-color: rgba(64, 200, 245, 0.726);
 }
 

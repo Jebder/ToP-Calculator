@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="scripts.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <h1 class="title">Calculator</h1>
     <div class="calcContainer">
         <div class="shell">
-            <div class="display">Numbers go here.</div>
+            <div class="display">
+                <div id="topDisplay"></div>
+                <div id="bottomDisplay">0</div>
+            </div>
             <div class="buttonContainer">
                 <div class="alignButtons">
                     <div class="clearDelContainer">
-                        <button class="clearDel" id="clear">Clear</button>
-                        <button class="clearDel" id="del">Delete</button>
+                        <button class="clearDel" id="clear" data-button-value="clear">Clear</button>
+                        <button class="clearDel" id="del" data-button-value="del">Delete</button>
                     </div>
                     <div class="numberButtonContainer">
-                        <button class="numberButtons" id="1">1</button>
-                        <button class="numberButtons" id="2">2</button>
-                        <button class="numberButtons" id="3">3</button>
-                        <button class="numberButtons operatorButtons" id="add">+</button>
-                        <button class="numberButtons" id="4">4</button>
-                        <button class="numberButtons" id="5">5</button>
-                        <button class="numberButtons" id="6">6</button>
-                        <button class="numberButtons operatorButtons" id="subtract">-</button>
-                        <button class="numberButtons" id="7">7</button>
-                        <button class="numberButtons" id="8">8</button>
-                        <button class="numberButtons" id="9">9</button>
-                        <button class="numberButtons operatorButtons" id="multiply">X</button>
-                        <button class="numberButtons" id="0">0</button>
-                        <button class="numberButtons operatorButtons" id=".">.</button>
-                        <button class="numberButtons operatorButtons" id="=">=</button>
-                        <button class="numberButtons operatorButtons" id="divide">%</button>
+                        <button class="numberButtons numbers" id="1" data-button-value="1">1</button>
+                        <button class="numberButtons numbers" id="2" data-button-value="2">2</button>
+                        <button class="numberButtons numbers" id="3" data-button-value="3">3</button>
+                        <button class="numberButtons operatorButtons" id="add" data-button-value="+">+</button>
+                        <button class="numberButtons numbers" id="4" data-button-value="4">4</button>
+                        <button class="numberButtons numbers" id="5" data-button-value="5">5</button>
+                        <button class="numberButtons numbers" id="6" data-button-value="6">6</button>
+                        <button class="numberButtons operatorButtons" id="subtract" data-button-value="-">-</button>
+                        <button class="numberButtons numbers" id="7" data-button-value="7">7</button>
+                        <button class="numberButtons numbers" id="8" data-button-value="8">8</button>
+                        <button class="numberButtons numbers" id="9" data-button-value="9">9</button>
+                        <button class="numberButtons operatorButtons" id="multiply" data-button-value="*">X</button>
+                        <button class="numberButtons numbers" id="0" data-button-value="0">0</button>
+                        <button class="numberButtons operatorButtons" id="." data-button-value=".">.</button>
+                        <button class="numberButtons equalsButton" id="=" data-button-value="=">=</button>
+                        <button class="numberButtons operatorButtons" id="divide" data-button-value="/">÷</button>
                         
                         
                     </div>
